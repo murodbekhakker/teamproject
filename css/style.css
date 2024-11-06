@@ -61,9 +61,10 @@ nav {
   gap: 10px;
   border-radius: 4px;
 }
-/* .nav-menu__item_btn {
+.nav-menu__item_btn {
+  margin-top: 30px;
   margin-bottom: 30px;
-} */
+}
 /* **********************************footer******************************************** */
 footer {
   background-color: var(--bg-black);
