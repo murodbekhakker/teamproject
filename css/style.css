@@ -27,6 +27,11 @@ body {
   --secondary-text: #525560;
   --off-white: #ebf0f9;
   --border: #e5e5e5;
+  --white: #ffffff;
+  --yellow: #f9cf64;
+  --dark-green: #ac94f1;
+  --pink: #f38fbf;
+  --cream-color: #fff0ca;
 }
 ul {
   list-style: none;
@@ -58,8 +63,8 @@ nav {
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
-  color: var(--bg-white);
-  background-color: var(--bg-black);
+  color: var(--off-white);
+  background-color: var(--black);
   width: Hug (116px) px;
   height: Hug (43px) px;
   padding: 12px 32px 12px 32px;
@@ -72,7 +77,7 @@ nav {
 }
 /* **********************************footer******************************************** */
 footer {
-  background-color: var(--bg-black);
+  background-color: var(--black);
 }
 .footer_logo {
   padding-top: 96px;
@@ -87,7 +92,7 @@ footer {
 }
 .footer_content-name {
   padding-top: 96px;
-  color: var(--bg-white);
+  color: var(--off-white);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -95,7 +100,7 @@ footer {
   text-align: left;
 }
 .footer_menu-link {
-  color: var(--bg-grey);
+  color: var(--secondary-text);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -116,7 +121,7 @@ footer {
   font-size: 40px;
   font-weight: 700;
   line-height: 56px;
-  color: var(--bg-white);
+  color: var(--off-white);
 }
 .footer_label {
   margin-top: 32px;
@@ -124,9 +129,9 @@ footer {
   max-width: 400px;
   height: 64px;
   border-radius: 4px 0 0 4px;
-  border: 1px solid var(--bg-grey);
+  border: 1px solid var(--secondary-text);
   outline: none;
-  background-color: var(--bg-black);
+  background-color: var(--black);
 }
 .footer_input-btn {
   width: 140px;
@@ -161,7 +166,7 @@ footer {
   right: 0;
   height: 4px;
   border-radius: calc(4px / 2);
-  background: var(--bg-black);
+  background: var(--black);
   color: inherit;
   opacity: 1;
   transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
