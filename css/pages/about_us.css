@@ -1,1 +1,114 @@
 @import url("../style.css");
+
+:root {
+  --green-primary: #70c174;
+  --green-secondary: #bef3c0;
+  --green-tertiary: #eff7f2;
+  --black: #0b0706;
+  --primary-text: #1d2130;
+  --secondary-text: #525560;
+  --off-white: #ebf0f9;
+  --border: #e5e5e5;
+  --white: #ffffff;
+  --yellow: #f9cf64;
+  --dark-green: #ac94f1;
+  --pink: #f38fbf;
+  --cream-color: #fff0ca;
+}
+.section_line {
+  margin-top: 8px;
+  width: 72px;
+  height: 2px;
+  border: 2px;
+  background-color: var(--primary-text);
+}
+.section_title_h3 {
+  width: 151px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: 2px;
+}
+.section_team_text {
+  margin-top: 32px;
+  width: 624px;
+  height: 134px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+}
+.section_text_h6 {
+  margin-top: 70px;
+  width: 496px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.section_text_p {
+  padding-bottom: 300px;
+  margin-bottom: 96px;
+  margin-top: 16px;
+  width: 496px;
+  height: 104px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 70%;
+  line-height: 25.6px;
+}
+.section_about_newsletter {
+  margin-top: 96px;
+  display: flex;
+  gap: 24px;
+}
+.section_family_img {
+  position: absolute;
+  top: 500px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/images/about_us/family.svg");
+  width: 1280px;
+  height: 448px;
+  border-radius: 12px;
+  margin-bottom: 96px;
+}
+.section_logos {
+  background-color: var(--green-tertiary);
+}
+.section_mission_text_h3 {
+  padding-top: 300px;
+  width: 122px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: 2px;
+  color: var(--primary-text);
+}
+.section_text_world_h2 {
+  padding-top: 30px;
+  width: 496px;
+  height: 84px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  color: var(--primary-text);
+}
+.section_text_p_lorem_text {
+  padding-bottom: 196px;
+  padding-top: 40px;
+  width: 496px;
+  height: 130px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  opacity: 70%;
+}
+.section_world_cards {
+  justify-content: center;
+  display: flex;
+  gap: 96px;
+}
