@@ -1,20 +1,6 @@
 @import url("../style.css");
 
-:root {
-  --green-primary: #70c174;
-  --green-secondary: #bef3c0;
-  --green-tertiary: #eff7f2;
-  --black: #0b0706;
-  --primary-text: #1d2130;
-  --secondary-text: #525560;
-  --off-white: #ebf0f9;
-  --border: #e5e5e5;
-  --white: #ffffff;
-  --yellow: #f9cf64;
-  --dark-green: #ac94f1;
-  --pink: #f38fbf;
-  --cream-color: #fff0ca;
-}
+
 .section_line {
   margin-top: 8px;
   width: 72px;

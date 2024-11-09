@@ -1,6 +1,5 @@
 @import url("../style.css");
 
-
 .section_image {
   background: url("/images/index/section.svg") no-repeat;
   background-size: cover;
@@ -344,7 +343,7 @@
   background-color: var(--black);
 }
 .main_stats_text_h2 {
-  padding-top: 142px;
+  padding-top: 102px;
   width: 611px;
   height: 116px;
   font-size: 48px;
