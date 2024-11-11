@@ -1,13 +1,14 @@
 @import url("../style.css");
 
 .section_image {
+  width: 100%;
   background: url("/images/index/section.svg") no-repeat;
   background-size: cover;
   height: 735px;
 }
 .section_h1_text {
   padding-top: 128px;
-  width: 640px;
+  max-width: 640px;
   height: 231px;
   font-size: 64px;
   font-weight: 700;
@@ -29,10 +30,9 @@
   line-height: 18.75px;
 }
 .section_link {
-  padding-top: 200px;
+  margin-top: 200px;
 }
 .section_btn {
-  padding-top: 200px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -577,4 +577,25 @@
   height: 55px;
   border-radius: 50%;
   background-color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .section_h1_text {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 46.8px;
+  }
+}
+@media (max-width: 330px) {
+  .section_btns {
+    flex-direction: column;
+  }
+  .section_corp {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 340px) {
+  .section_horizontal_line {
+    max-width: 861px;
+  }
 }
