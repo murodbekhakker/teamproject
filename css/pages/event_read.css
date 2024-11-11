@@ -1,1 +1,185 @@
 @import url("../style.css");
+
+  .no-plastic-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f4f3;
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        .no-plastic-container {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .no-plastic-heading {
+            font-size: 2rem;
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+
+        .no-plastic-details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+            color: #6c757d;
+        }
+
+        .no-plastic-icon {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .no-plastic-icon img {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            .no-plastic-heading {
+                font-size: 1.5rem;
+            }
+
+            .no-plastic-details {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+         .about-section {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .about-title {
+                font-size: 2rem;
+            }
+
+            .about-text {
+                font-size: 0.9rem;
+            }
+        }
+
+
+         .events-section {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .events-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+        }
+
+        .event-card {
+            background-color: #a5e5a5;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .event-date {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .event-date span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: normal;
+            color: #666666;
+        }
+
+        .event-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .event-info .label {
+            font-size: 0.8rem;
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .event-info .title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .event-arrow {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .event-arrow:hover {
+            background-color: #cccccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .event-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .event-info {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }

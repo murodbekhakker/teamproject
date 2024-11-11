@@ -1,1 +1,72 @@
 @import url("../style.css");
+
+ .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 20px;
+      text-align: left;
+    }
+
+    h2 {
+      color: #1D1F35;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .download-section {
+      display: flex;
+      align-items: center;
+      background-color: #F0F6F3;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      color: #1D1F35;
+    }
+
+    .download-section:hover {
+      background-color: #E0EEE4;
+    }
+
+    .icon-circle {
+      width: 32px;
+      height: 32px;
+      background-color: #A4D4AE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-right: 15px;
+      font-size: 18px;
+      color: white;
+    }
+
+    .text {
+      font-size: 16px;
+      font-weight: 500;
+      flex-grow: 1;
+    }
+
+    .arrow {
+      font-size: 18px;
+    }
+
+    .font-link {
+      color: #1D1F35;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .download-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .icon-circle {
+        margin: 0 0 10px 0;
+      }
+      .arrow {
+        margin-top: 10px;
+      }
+    }

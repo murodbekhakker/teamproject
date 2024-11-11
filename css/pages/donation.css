@@ -1,1 +1,184 @@
 @import url("../style.css");
+
+   :root {
+      --green-primary: #70c174;
+      --primary-text: #1d2130;
+      --secondary-text: #525560;
+      --off-white: #f8fcf9;
+      --bg-light: #eef7f1;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-light);
+    }
+
+    .donation-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 50px 0; /* Yuqori va pastki bo'sh joy */
+      background-color: var(--off-white);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .donation-text {
+      flex: 1;
+      padding: 0 20px; /* O‘ng va chap bo‘sh joy */
+    }
+
+    .donation-text h2 {
+      color: var(--primary-text);
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .donation-text p {
+      color: var(--secondary-text);
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .donation-text button {
+      background-color: var(--green-primary);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .donation-text button:hover {
+      background-color: #5aa85b;
+    }
+
+    .donation-image {
+      flex: 1;
+      padding: 0 20px; /* O‘ng va chap bo‘sh joy */
+      text-align: right;
+    }
+
+    .donation-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .donation-section {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .donation-text {
+        padding: 0;
+        text-align: center;
+      }
+
+      .donation-image {
+        text-align: center;
+        margin-top: 20px;
+        padding: 0;
+      }
+
+      .donation-image img {
+        max-width: 80%;
+      }
+    }
+
+    
+    
+      .full-width-img {
+            width: 100%;
+            height: auto;
+            display: block; /* Inline spacingni yo'q qiladi */
+            margin: 0; /* Tashqi oraliqni olib tashlaydi */
+            padding: 0; /* Ichki oraliqni olib tashlaydi */
+            /* padding-top: 50px; */
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .full-width-img {
+                border-radius: 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .full-width-img {
+                border-radius: 2px;
+                box-shadow: none;
+            }
+        }
+    
+
+          :root {
+            --green-primary: #70c174;
+            --primary-text: #1d2130;
+            --secondary-text: #525560;
+            --off-white: #f8fcf9;
+            --bg-light: #eef7f1;
+        }
+
+      
+        .banner {
+           background-image: url(./bg/BG.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--off-white);
+            height: 300px; 
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+
+        .banner h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--off-white);
+            margin-bottom: 20px;
+        }
+
+       
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-volunteer {
+            background-color: var(--green-primary);
+            color: var(--off-white);
+        }
+
+        .button-donate {
+            background-color: var(--off-white);
+            color: var(--primary-text);
+        }
+
+        /* Tugmalar hover effekti */
+        .button-volunteer:hover {
+            background-color: #5ab462; 
+        }
+
+        .button-donate:hover {
+            background-color: #e0e0e0;
+        }
