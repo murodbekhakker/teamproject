@@ -305,7 +305,7 @@
 }
 .section_card_tree_h3 {
   padding: 80px 48px 16px 48px;
-  width: 330px;
+  max-width: 330px;
   height: 84px;
   font-size: 28px;
   font-weight: 700;
@@ -314,7 +314,7 @@
 }
 .section_card_tree_p {
   padding: 90px 48px 54px 48px;
-  width: 390px;
+  max-width: 390px;
   height: 78px;
   top: 3154px;
   font-size: 16px;
@@ -695,6 +695,11 @@
   .main_stats_plane {
     padding-top: 0px;
   }
+  .section_card_tree_h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+  }
 }
 @media (max-width: 400px) {
   .section_p_text_2 {
@@ -747,5 +752,8 @@
   }
   .section_horizontal_line {
     width: 100%;
+  }
+  .section_card_tree_btn {
+    margin-top: 75px;
   }
 }
