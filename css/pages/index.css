@@ -651,7 +651,7 @@
     justify-content: center;
   }
   .main_grener_text_h2 {
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 47.6px;
   }
@@ -666,9 +666,6 @@
     flex-direction: column;
     gap: 0px;
   }
-  /* .main_card_number {
-    margin: 0 auto;
-  } */
   .main_text_lines {
     justify-content: center;
   }
