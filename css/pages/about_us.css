@@ -1,6 +1,5 @@
 @import url("../style.css");
 
-
 .section_line {
   margin-top: 8px;
   width: 72px;
@@ -18,7 +17,7 @@
 }
 .section_team_text {
   margin-top: 32px;
-  width: 624px;
+  max-width: 624px;
   height: 134px;
   font-size: 56px;
   font-weight: 700;
@@ -26,7 +25,7 @@
 }
 .section_text_h6 {
   margin-top: 70px;
-  width: 496px;
+  max-width: 496px;
   height: 60px;
   font-size: 20px;
   font-weight: 700;
@@ -36,7 +35,7 @@
   padding-bottom: 300px;
   margin-bottom: 96px;
   margin-top: 16px;
-  width: 496px;
+  max-width: 496px;
   height: 104px;
   font-size: 16px;
   font-weight: 400;
@@ -49,17 +48,18 @@
   gap: 24px;
 }
 .section_family_img {
-  position: absolute;
-  top: 500px;
-  z-index: 999;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url("/images/about_us/family.svg");
-  width: 1280px;
+  max-width: 1280px;
   height: 448px;
   border-radius: 12px;
   margin-bottom: 96px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .section_logos {
   background-color: var(--green-tertiary);
@@ -76,7 +76,7 @@
 }
 .section_text_world_h2 {
   padding-top: 30px;
-  width: 496px;
+  max-width: 496px;
   height: 84px;
   font-size: 28px;
   font-weight: 700;
@@ -86,7 +86,7 @@
 .section_text_p_lorem_text {
   padding-bottom: 196px;
   padding-top: 40px;
-  width: 496px;
+  max-width: 496px;
   height: 130px;
   font-size: 16px;
   font-weight: 400;
@@ -115,7 +115,7 @@
 .section_awards_text_h2 {
   padding-top: 96px;
   margin: 0 auto;
-  width: 501px;
+  max-width: 501px;
   height: 58px;
   font-size: 48px;
   font-weight: 700;
@@ -160,12 +160,14 @@
   justify-content: center;
   gap: 212px;
 }
+.section_journey_images {
+  width: 100%;
+}
 .section_journey_card {
   gap: 35px;
   display: flex;
   margin-top: 96px;
-  width: 1280px;
-  height: 576px;
+  max-width: 1280px;
   border-radius: 12px;
   background-color: var(--black);
 }
@@ -182,7 +184,7 @@
 }
 .journey_card_raised {
   padding: 16px 0 0 96px;
-  width: 597.18px;
+  max-width: 597.18px;
   height: 58px;
   font-size: 48px;
   font-weight: 700;
@@ -191,7 +193,7 @@
 }
 .journey_card_text_p {
   padding: 16px 0 0 96px;
-  width: 488.22px;
+  max-width: 488.22px;
   height: 104px;
   font-size: 16px;
   font-weight: 400;
@@ -227,7 +229,7 @@
 .main_page_team_text {
   padding-top: 96px;
   margin: 0 auto;
-  width: 316px;
+  max-width: 316px;
   height: 58px;
   font-size: 48px;
   font-weight: 700;
@@ -238,7 +240,7 @@
   padding-top: 66px;
   margin: 0 auto;
   text-align: center;
-  width: 519px;
+  max-width: 519px;
   height: 52px;
   font-size: 16px;
   font-weight: 400;
@@ -287,16 +289,17 @@
 }
 
 .main_grener {
+  width: 100%;
   margin: 96px 0 96px 0;
   background: url("/images/about_us/grener.svg");
-  width: 1280px;
+  max-width: 1280px;
   height: 384px;
   border-radius: 12px;
 }
 .main_grener_text_h2 {
   padding-top: 93px;
   margin: 0 auto;
-  width: 631px;
+  max-width: 631px;
   height: 116px;
   font-size: 48px;
   font-weight: 700;
@@ -373,8 +376,7 @@
 }
 .main_planet_card {
   margin: 96px 0 96px 0;
-  width: 628px;
-  height: 191px;
+  max-width: 628px;
   border-radius: 8px;
   background-color: var(--green-secondary);
 }
@@ -440,4 +442,282 @@
   height: 55px;
   border-radius: 50%;
   background-color: var(--white);
+}
+@media (max-width: 1320px) {
+  .section_world_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_mission_text_h3 {
+    padding-top: 0px;
+  }
+  .section_icon_logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_journey_card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_page_supporters {
+    margin-top: 60px;
+  }
+  .main_team_peoples_cards {
+    flex-wrap: wrap;
+  }
+  .main_chart_and_texts {
+    flex-direction: column;
+    padding-top: 0px;
+    gap: 0px;
+  }
+  .main_cards_change {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main_planet_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_planet_card {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .section_about_newsletter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_line {
+    display: none;
+  }
+  .section_text_p {
+    padding-bottom: 10px;
+  }
+  .journey_img {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .section_awards_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+  .journey_card_name {
+    padding: 60px 0 0 10px;
+  }
+  .journey_card_raised {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .journey_card_text_p {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .journey_card_numbers {
+    padding: 10;
+    margin-top: 30px;
+  }
+  .journey_card_numbers {
+    padding: 10px;
+  }
+}
+@media (max-width: 720px) {
+  .section_journey_card {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+}
+@media (max-width: 670px) {
+  .main_stats_planes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main_grener_text_h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+}
+@media (max-width: 650px) {
+  .main_stats_text_p {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .journey_card_numbers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main_planet_card {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .main_text_lines {
+    justify-content: center;
+  }
+  .main_card_text_he_plastic {
+    text-align: center;
+    justify-content: center;
+  }
+  .main_card_played {
+    margin-top: 40px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 520px) {
+  .section_text_p {
+    padding-top: 60px;
+  }
+  .section_text_h6 {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .section_team_text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57.2px;
+  }
+}
+@media (max-width: 490px) {
+  .journey_card_raised {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+}
+@media (max-width: 450px) {
+  .journey_card_text_p {
+    margin: 40px 0 95px 0;
+  }
+  .main_page_team_text {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+  .main_page_texr_p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.6px;
+  }
+}
+@media (max-width: 430px) {
+  .main_stats_plane {
+    padding-top: 0px;
+  }
+  .section_card_tree_h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+@media (max-width: 390px) {
+  .main_stats_text_h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+  .main_stats_planes {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 380px) {
+  .section_text_h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+}
+@media (max-width: 390px) {
+  .section_text_p_lorem_text {
+    margin-top: 30px;
+  }
+  .section_mission_text_h3 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
+}
+@media (max-width: 1320px) {
 }
