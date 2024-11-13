@@ -1,10 +1,7 @@
-@import url("../style.css");
-
 .section_image {
   width: 100%;
   background: url("/images/index/section.svg") no-repeat;
   background-size: cover;
-  height: 735px;
 }
 .section_h1_text {
   padding-top: 128px;
@@ -51,12 +48,13 @@
   padding-top: 200px;
 }
 .section_horizontal_line {
-  width: 861px;
+  width: calc(100% - 420px);
   height: 1px;
   border: 1px;
   background-color: var(--white);
 }
 .section_statistics {
+  width: 100%;
   padding-top: 192px;
   display: flex;
   align-items: center;
@@ -97,11 +95,10 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 57.6px;
-  width: 607px;
-  height: 116px;
+  max-width: 607px;
 }
 .section_p_text {
-  width: 608px;
+  max-width: 608px;
   height: 96px;
   margin-top: 32px;
   font-size: 16px;
@@ -110,7 +107,7 @@
   color: var(--secondary-text);
 }
 .section_p_text_2 {
-  width: 608px;
+  max-width: 608px;
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
@@ -133,7 +130,8 @@
   margin-top: 96px;
   background: url("/images/index/family.svg") no-repeat;
   box-sizing: cover;
-  width: 480px;
+  max-width: 480px;
+  width: 100%;
   height: 578.34px;
 }
 .section_images_and_texts {
@@ -195,7 +193,7 @@
 }
 .section_text_h4_coming {
   margin-top: 32px;
-  width: 608px;
+  max-width: 608px;
   height: 116px;
   font-size: 48px;
   font-weight: 700;
@@ -204,7 +202,7 @@
   color: var(--primary-text);
 }
 .section_text_lorem {
-  width: 608px;
+  max-width: 608px;
   height: 52px;
   font-size: 16px;
   font-weight: 400;
@@ -228,9 +226,12 @@
   display: flex;
   gap: 24px;
 }
+.section_dog_img {
+  width: 100%;
+}
 .section_theme_text_h5 {
   margin-top: 55px;
-  width: 290px;
+  max-width: 290px;
   height: 28px;
   font-size: 24px;
   font-weight: 700;
@@ -239,7 +240,7 @@
 }
 .section_theme_text_p {
   margin-top: 8px;
-  width: 384px;
+  max-width: 384px;
   height: 52px;
   font-size: 16px;
   font-weight: 400;
@@ -274,7 +275,7 @@
 }
 .section_text_h2_forever {
   margin-top: 32px;
-  width: 640px;
+  max-width: 640px;
   height: 174px;
   font-size: 48px;
   font-weight: 700;
@@ -282,20 +283,23 @@
   color: var(--primary-text);
 }
 .section_card_tree_program_1 {
+  width: 100%;
   background: url("/images/index/tree_plantation.svg");
-  width: 411px;
+  max-width: 411px;
   height: 421px;
   border-radius: 12px;
 }
 .section_card_tree_program_2 {
+  width: 100%;
   background: url("/images/index/program_sity.svg");
-  width: 411px;
+  max-width: 411px;
   height: 421px;
   border-radius: 12px;
 }
 .section_card_tree_program_3 {
+  width: 100%;
   background: url("/images/index/safety_program.svg");
-  width: 411px;
+  max-width: 411px;
   height: 421px;
   border-radius: 12px;
 }
@@ -344,7 +348,7 @@
 }
 .main_stats_text_h2 {
   padding-top: 102px;
-  width: 611px;
+  max-width: 611px;
   height: 116px;
   font-size: 48px;
   font-weight: 700;
@@ -353,7 +357,7 @@
 }
 .main_stats_text_p {
   padding-top: 140px;
-  width: 606px;
+  max-width: 606px;
   height: 52px;
   font-size: 16px;
   font-weight: 400;
@@ -402,7 +406,14 @@
   align-items: center;
   gap: 8px;
 }
+.main_chart_svg {
+  width: 100%;
+}
 .main_stats_text_p_2 {
+  padding-top: 13px;
+  max-width: 606px;
+  height: 52px;
+  opacity: 60%;
   font-size: 16px;
   font-weight: 500;
   line-height: 25.6px;
@@ -426,14 +437,15 @@
 .main_grener {
   margin: 96px 0 96px 0;
   background: url("/images/index/greener.svg");
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   height: 384px;
   border-radius: 12px;
 }
 .main_grener_text_h2 {
   padding-top: 93px;
   margin: 0 auto;
-  width: 631px;
+  max-width: 631px;
   height: 116px;
   font-size: 48px;
   font-weight: 700;
@@ -509,13 +521,14 @@
   gap: 24px;
 }
 .main_planet_card {
+  padding-bottom: 40px;
   margin: 96px 0 96px 0;
-  width: 628px;
-  height: 191px;
+  max-width: 628px;
   border-radius: 8px;
   background-color: var(--green-secondary);
 }
 .main_planet_cards {
+  justify-content: center;
   display: flex;
   gap: 24px;
 }
@@ -562,8 +575,7 @@
 }
 .main_card_text_he_plastic {
   padding-top: 8px;
-  width: 381px;
-  height: 84px;
+  width: 300px;
   font-size: 28px;
   font-weight: 700;
   line-height: 42px;
@@ -578,12 +590,147 @@
   border-radius: 50%;
   background-color: var(--white);
 }
-
+@media (max-width: 1320px) {
+  .section_images_and_texts {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section_logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_family_images {
+    margin-top: 0;
+  }
+  .dog_and_theme_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_chart_and_texts {
+    flex-direction: column;
+    padding-top: 0px;
+    gap: 0px;
+  }
+  .main_cards_change {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main_planet_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_planet_card {
+    margin: 0px;
+  }
+}
+@media (max-width: 1250px) {
+  .section_cards_tree_program {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 850px) {
+  .section_media_projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 750px) {
+  .section_text_what {
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .main_stats_text_p {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 670px) {
+  .main_stats_planes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main_grener_text_h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+}
 @media (max-width: 600px) {
   .section_h1_text {
     font-size: 44px;
     font-weight: 700;
     line-height: 46.8px;
+  }
+  .main_planet_card {
+    flex-direction: column;
+    gap: 0px;
+  }
+  /* .main_card_number {
+    margin: 0 auto;
+  } */
+  .main_text_lines {
+    justify-content: center;
+  }
+  .main_card_text_he_plastic {
+    text-align: center;
+    justify-content: center;
+  }
+  .main_card_played {
+    margin-top: 40px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  .section_text_lorem {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 500px) {
+  .section_horizontal_line_small {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .main_stats_plane {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .section_p_text_2 {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .section_statistics {
+    flex-direction: column;
+  }
+  .section_text_h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+}
+@media (max-width: 390px) {
+  .main_stats_text_h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.6px;
+  }
+  .main_stats_planes {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 370px) {
+  .section_theme_text_h5 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18.13px;
+  }
+  .section_theme_text_p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
   }
 }
 @media (max-width: 330px) {
@@ -597,5 +744,8 @@
 @media (max-width: 340px) {
   .section_horizontal_line {
     max-width: 861px;
+  }
+  .section_horizontal_line {
+    width: 100%;
   }
 }
